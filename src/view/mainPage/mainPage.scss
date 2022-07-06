@@ -1,0 +1,39 @@
+$baseClassName: main-page;
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.#{$baseClassName} {
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+
+  &__wrapper {
+    height: 15vh;
+    padding-top: 10vh;
+    &__header {
+      font-size: calc(10px + 2vmin);
+      color: #61dafb;
+      vertical-align: middle;
+    }
+
+    &__description {
+      color: white;
+    }
+  }
+
+  &__logo {
+    height: 40vmin;
+    pointer-events: none;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+}
